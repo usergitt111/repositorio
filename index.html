@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body id="cuerpo">
+    <div class="container my-5">
+        <h4>LISTADO DE PRODUCTOS </h4>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lbl_nombre">Nombre</span>
+                    <input type="text" class="form-control" aria-label="Name" aria-describedby="name" name="name" id="name">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lbl_description">Descripcion</span>
+                    <input type="text" class="form-control" aria-label="description" aria-describedby="description" name="description" id="description">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lbl_price">Precio</span>
+                    <input type="text" class="form-control" aria-label="price" aria-describedby="price" name="price" id="price">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="lbl_price">Cantidad disponible </span>
+                    <input type="text" class="form-control" aria-label="available_quentity" aria-describedby="available_quentity" name="available_quentity" id="available_quentity">
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <button type="button" class="btn btn-success btn-block w-100" id="btnSave">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <hr/>
+
+    <br><br>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">NOMBRE</th>
+                <th scope="col">DESCRIPCION</th>
+                <th scope="col">PRECIO</th>
+                <th scope="col">CANTIDAD DISPONIBLE</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              
+            </tbody>
+        </table>
+    </div>
+    <script src="Producto.js"></script>
+    <script src="stock.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
